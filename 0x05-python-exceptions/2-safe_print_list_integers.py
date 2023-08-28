@@ -3,13 +3,13 @@
 def safe_print_list_integers(my_list=[], x=0):
     printed_integers = 0
     try:
-        for j in range(x):
+        for j in range(0, x):
             if isinstance(my_list[j], int):
                 print("{:d}".format(my_list[j]), end='')
                 printed_integers += 1
     except (ValueError, TypeError):
         pass
     finally:
-        print()
+        print('')
 
     return (printed_integers)
