@@ -6,7 +6,7 @@ def magic_calculation(a, b):
         try:
             if j > a:
                 raise Expectation('Too far')
-            result = result + (a ** b) / j
+            result = result + a ** b / j
         except:
             result = b + a
             break
