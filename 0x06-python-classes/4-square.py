@@ -1,9 +1,15 @@
 #!/usr/bin/python3
-"""
-Define a class Square.
-"""
-class Square:
-    """Represents a Square."""
+"""Define a class Square."""
+
+class Square: 
+    """
+    This class represents a Square.
+
+    It defines a square by its size.
+    
+    Attributes:
+        __size (int): The size of the square.
+    """
 
     def __init__(self, size=0):
         """
@@ -16,6 +22,7 @@ class Square:
             TypeError: If size is not an integer.
             ValueError: If size is less than 0.
         """
+
         self.size = size
 
     @property
