@@ -12,8 +12,8 @@ class Rectangle:
             width (int):The width of the rectangle.
             height (int): The height of the rectangle.
         """
-        self.width = width
-        self.height = height
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -55,10 +55,7 @@ class Rectangle:
         """Returns a string representation of the rectangle with #."""
         if self.__width == 0 or self.__height == 0:
             return ("")
-        
-        rec = []
-        for q in range(self.__height):
-            [rec.append('#') for p in range(self.__width)]
-            if q != self.__height - 1:
-                rec.append("\n")
-        return ("".join(rec))
+        rectangle_str = ""
+        for _ in range(self.__height):
+            rectangle_str += "#" * self.__width + "\n"
+        return rectangle_str[:-1]
