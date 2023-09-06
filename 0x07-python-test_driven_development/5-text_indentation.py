@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define the indentetion of text."""
 
+
 def text_indentation(text):
     """
     Prints text with 2 new lines after each of these characters: ., ? and :.
