@@ -1,0 +1,3 @@
+this part i started late
+it is about using the module mysqldb to connect to a MySQL database and execute my queries
+more to come ....
